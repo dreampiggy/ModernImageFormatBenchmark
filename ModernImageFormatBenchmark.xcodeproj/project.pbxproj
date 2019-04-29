@@ -13,9 +13,21 @@
 		3217BE6F22054476003D0310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3217BE6E22054476003D0310 /* Assets.xcassets */; };
 		3217BE7222054476003D0310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3217BE7022054476003D0310 /* LaunchScreen.storyboard */; };
 		3217BE7522054476003D0310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3217BE7422054476003D0310 /* main.m */; };
+		3217BE8122057C50003D0310 /* lena-512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3217BE8022057C50003D0310 /* lena-512x512.png */; };
+		324B1E7B223E32BC00E91F71 /* EncodingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B1E7A223E32BC00E91F71 /* EncodingTester.m */; };
+		324B1E7E223E32D300E91F71 /* DecodingTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B1E7D223E32D300E91F71 /* DecodingTester.m */; };
+		324B1E81223E388900E91F71 /* lena-512x512.webp in Resources */ = {isa = PBXBuildFile; fileRef = 324B1E80223E388900E91F71 /* lena-512x512.webp */; };
+		324B1E83223E38B300E91F71 /* lena-512x512.bpg in Resources */ = {isa = PBXBuildFile; fileRef = 324B1E82223E38B300E91F71 /* lena-512x512.bpg */; };
+		327230E1223E450F00ABA11E /* lena-512x512.flif in Resources */ = {isa = PBXBuildFile; fileRef = 327230E0223E450F00ABA11E /* lena-512x512.flif */; };
+		327230E3223E456200ABA11E /* lena-512x512.heic in Resources */ = {isa = PBXBuildFile; fileRef = 327230E2223E456200ABA11E /* lena-512x512.heic */; };
+		327230E5223E462B00ABA11E /* lena-512x512.heif in Resources */ = {isa = PBXBuildFile; fileRef = 327230E4223E462B00ABA11E /* lena-512x512.heif */; };
+		327B36812205C7180048175B /* PerformanceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B36802205C7180048175B /* PerformanceUtil.m */; };
+		328F3EAE22770B63005217BB /* lena-512x512.avif in Resources */ = {isa = PBXBuildFile; fileRef = 328F3EAD22770B63005217BB /* lena-512x512.avif */; };
+		4CF78FB2C36C83BFF0101B5E /* libPods-ModernImageFormatBenchmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ACFC239DFCBBE8514B217F /* libPods-ModernImageFormatBenchmark.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4FEFE654C10B3627DC1CD6 /* Pods-ModernImageFormatBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModernImageFormatBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModernImageFormatBenchmark/Pods-ModernImageFormatBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
 		3217BE6222054475003D0310 /* ModernImageFormatBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernImageFormatBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3217BE6522054475003D0310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3217BE6622054475003D0310 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +38,22 @@
 		3217BE7122054476003D0310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3217BE7322054476003D0310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3217BE7422054476003D0310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3217BE8022057C50003D0310 /* lena-512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lena-512x512.png"; sourceTree = "<group>"; };
+		324B1E79223E32BC00E91F71 /* EncodingTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingTester.h; sourceTree = "<group>"; };
+		324B1E7A223E32BC00E91F71 /* EncodingTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingTester.m; sourceTree = "<group>"; };
+		324B1E7C223E32D300E91F71 /* DecodingTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecodingTester.h; sourceTree = "<group>"; };
+		324B1E7D223E32D300E91F71 /* DecodingTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecodingTester.m; sourceTree = "<group>"; };
+		324B1E7F223E334E00E91F71 /* CGImageInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGImageInternal.h; path = ModernImageFormatBenchmark/CGImageInternal.h; sourceTree = SOURCE_ROOT; };
+		324B1E80223E388900E91F71 /* lena-512x512.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.webp"; sourceTree = "<group>"; };
+		324B1E82223E38B300E91F71 /* lena-512x512.bpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.bpg"; sourceTree = "<group>"; };
+		327230E0223E450F00ABA11E /* lena-512x512.flif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.flif"; sourceTree = "<group>"; };
+		327230E2223E456200ABA11E /* lena-512x512.heic */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.heic"; sourceTree = "<group>"; };
+		327230E4223E462B00ABA11E /* lena-512x512.heif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.heif"; sourceTree = "<group>"; };
+		327B367F2205C7180048175B /* PerformanceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceUtil.h; sourceTree = "<group>"; };
+		327B36802205C7180048175B /* PerformanceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceUtil.m; sourceTree = "<group>"; };
+		328F3EAD22770B63005217BB /* lena-512x512.avif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.avif"; sourceTree = "<group>"; };
+		7C0E12D7E6FEB38A338D9F44 /* Pods-ModernImageFormatBenchmark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModernImageFormatBenchmark.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModernImageFormatBenchmark/Pods-ModernImageFormatBenchmark.release.xcconfig"; sourceTree = "<group>"; };
+		94ACFC239DFCBBE8514B217F /* libPods-ModernImageFormatBenchmark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModernImageFormatBenchmark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF78FB2C36C83BFF0101B5E /* libPods-ModernImageFormatBenchmark.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B90F414710DCADC114B173F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94ACFC239DFCBBE8514B217F /* libPods-ModernImageFormatBenchmark.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3217BE5922054475003D0310 = {
 			isa = PBXGroup;
 			children = (
 				3217BE6422054475003D0310 /* ModernImageFormatBenchmark */,
 				3217BE6322054475003D0310 /* Products */,
+				F05C0831E7CD9B915BA67A5C /* Pods */,
+				0B90F414710DCADC114B173F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +97,18 @@
 		3217BE6422054475003D0310 /* ModernImageFormatBenchmark */ = {
 			isa = PBXGroup;
 			children = (
+				3217BE7F22057C50003D0310 /* images */,
 				3217BE6522054475003D0310 /* AppDelegate.h */,
 				3217BE6622054475003D0310 /* AppDelegate.m */,
 				3217BE6822054475003D0310 /* ViewController.h */,
 				3217BE6922054475003D0310 /* ViewController.m */,
+				324B1E7C223E32D300E91F71 /* DecodingTester.h */,
+				324B1E7D223E32D300E91F71 /* DecodingTester.m */,
+				324B1E79223E32BC00E91F71 /* EncodingTester.h */,
+				324B1E7A223E32BC00E91F71 /* EncodingTester.m */,
+				327B367F2205C7180048175B /* PerformanceUtil.h */,
+				327B36802205C7180048175B /* PerformanceUtil.m */,
+				324B1E7F223E334E00E91F71 /* CGImageInternal.h */,
 				3217BE6B22054475003D0310 /* Main.storyboard */,
 				3217BE6E22054476003D0310 /* Assets.xcassets */,
 				3217BE7022054476003D0310 /* LaunchScreen.storyboard */,
@@ -71,6 +118,29 @@
 			path = ModernImageFormatBenchmark;
 			sourceTree = "<group>";
 		};
+		3217BE7F22057C50003D0310 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3217BE8022057C50003D0310 /* lena-512x512.png */,
+				324B1E80223E388900E91F71 /* lena-512x512.webp */,
+				324B1E82223E38B300E91F71 /* lena-512x512.bpg */,
+				327230E2223E456200ABA11E /* lena-512x512.heic */,
+				327230E4223E462B00ABA11E /* lena-512x512.heif */,
+				327230E0223E450F00ABA11E /* lena-512x512.flif */,
+				328F3EAD22770B63005217BB /* lena-512x512.avif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F05C0831E7CD9B915BA67A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A4FEFE654C10B3627DC1CD6 /* Pods-ModernImageFormatBenchmark.debug.xcconfig */,
+				7C0E12D7E6FEB38A338D9F44 /* Pods-ModernImageFormatBenchmark.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +148,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3217BE7822054476003D0310 /* Build configuration list for PBXNativeTarget "ModernImageFormatBenchmark" */;
 			buildPhases = (
+				0C33D037772CCF7E22C43D51 /* [CP] Check Pods Manifest.lock */,
 				3217BE5E22054475003D0310 /* Sources */,
 				3217BE5F22054475003D0310 /* Frameworks */,
 				3217BE6022054475003D0310 /* Resources */,
@@ -128,20 +199,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324B1E83223E38B300E91F71 /* lena-512x512.bpg in Resources */,
+				3217BE8122057C50003D0310 /* lena-512x512.png in Resources */,
 				3217BE7222054476003D0310 /* LaunchScreen.storyboard in Resources */,
 				3217BE6F22054476003D0310 /* Assets.xcassets in Resources */,
+				327230E5223E462B00ABA11E /* lena-512x512.heif in Resources */,
+				327230E1223E450F00ABA11E /* lena-512x512.flif in Resources */,
+				328F3EAE22770B63005217BB /* lena-512x512.avif in Resources */,
+				327230E3223E456200ABA11E /* lena-512x512.heic in Resources */,
+				324B1E81223E388900E91F71 /* lena-512x512.webp in Resources */,
 				3217BE6D22054475003D0310 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C33D037772CCF7E22C43D51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModernImageFormatBenchmark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3217BE5E22054475003D0310 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324B1E7B223E32BC00E91F71 /* EncodingTester.m in Sources */,
+				327B36812205C7180048175B /* PerformanceUtil.m in Sources */,
 				3217BE6A22054475003D0310 /* ViewController.m in Sources */,
+				324B1E7E223E32D300E91F71 /* DecodingTester.m in Sources */,
 				3217BE7522054476003D0310 /* main.m in Sources */,
 				3217BE6722054475003D0310 /* AppDelegate.m in Sources */,
 			);
@@ -220,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,32 +389,40 @@
 		};
 		3217BE7922054476003D0310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4FEFE654C10B3627DC1CD6 /* Pods-ModernImageFormatBenchmark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = ModernImageFormatBenchmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.ModernImageFormatBenchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3217BE7A22054476003D0310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0E12D7E6FEB38A338D9F44 /* Pods-ModernImageFormatBenchmark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = ModernImageFormatBenchmark/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.ModernImageFormatBenchmark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
