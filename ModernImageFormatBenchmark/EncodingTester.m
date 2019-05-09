@@ -8,6 +8,7 @@
 
 #import "EncodingTester.h"
 #import "PerformanceUtil.h"
+#import "TesterUtil.h"
 #import "CGImageInternal.h"
 #import <SDWebImage/SDWebImage.h>
 #import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
@@ -29,13 +30,15 @@
     CGDataProviderRetainBytePtr(provider);
     
     double quality = 0.75;
-    size_t formatCount = 6;
+    size_t formatCount = 8;
     
-    SDImageFormat formats[] = {SDImageFormatHEIC, SDImageFormatHEIF, SDImageFormatWebP, SDImageFormatBPG, SDImageFormatFLIF, SDImageFormatAVIF};
+    SDImageFormat formats[] = {SDImageFormatPNG, SDImageFormatJPEG, SDImageFormatHEIC, SDImageFormatHEIF, SDImageFormatWebP, SDImageFormatBPG, SDImageFormatFLIF, SDImageFormatAVIF};
     for (int i = 0; i < formatCount; i++) {
         SDImageFormat format = formats[i];
         id<SDImageCoder> coder;
         switch (format) {
+            case SDImageFormatPNG:
+            case SDImageFormatJPEG:
             case SDImageFormatHEIC:
                 coder = SDImageIOCoder.sharedCoder;
                 break;
@@ -69,7 +72,8 @@
     NSData *encodedData = [encoder encodedDataWithImage:image format:format options:encodeOptions];
     NSParameterAssert(encodedData);
     CFAbsoluteTime after = CFAbsoluteTimeGetCurrent();
-    NSLog(@"Encode:  %@, Time: %.2f ms, RAM: %.3fMB", encoder, (after - before) * 1000, [PerformanceUtil memoryUsage] - memoryUsage);
+    NSString *type = [TesterUtil typeForFormat:format];
+    printf("<Encode> [%s]: Time: %.2f ms, RAM: %.3f MB\n", [type cStringUsingEncoding:NSASCIIStringEncoding], (after - before) * 1000, [PerformanceUtil memoryUsage] - memoryUsage);
 }
 
 @end

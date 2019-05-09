@@ -8,6 +8,7 @@
 
 #import "DecodingTester.h"
 #import "PerformanceUtil.h"
+#import "TesterUtil.h"
 #import "CGImageInternal.h"
 #import <SDWebImage/SDWebImage.h>
 #import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
@@ -19,57 +20,54 @@
 @implementation DecodingTester
 
 + (void)testDecodingName:(NSString *)name {
-    size_t formatCount = 6;
-    SDImageFormat formats[] = {SDImageFormatHEIC, SDImageFormatHEIF, SDImageFormatWebP, SDImageFormatBPG, SDImageFormatFLIF, SDImageFormatAVIF};
+    size_t formatCount = 8;
+    SDImageFormat formats[] = {SDImageFormatPNG, SDImageFormatJPEG, SDImageFormatHEIC, SDImageFormatHEIF, SDImageFormatWebP, SDImageFormatBPG, SDImageFormatFLIF, SDImageFormatAVIF};
     
     for (int i = 0; i < formatCount; i++) {
         SDImageFormat format = formats[i];
         id<SDImageCoder> coder;
-        NSString *type;
         switch (format) {
+            case SDImageFormatPNG:
+            case SDImageFormatJPEG:
             case SDImageFormatHEIC:
                 coder = SDImageIOCoder.sharedCoder;
-                type = @"heic";
                 break;
             case SDImageFormatHEIF:
                 coder = SDImageHEIFCoder.sharedCoder;
-                type = @"heif";
                 break;
             case SDImageFormatWebP:
                 coder = SDImageWebPCoder.sharedCoder;
-                type = @"webp";
                 break;
             case SDImageFormatBPG:
                 coder = SDImageBPGCoder.sharedCoder;
-                type = @"bpg";
                 break;
             case SDImageFormatFLIF:
                 coder = SDImageFLIFCoder.sharedCoder;
-                type = @"flif";
                 break;
             case SDImageFormatAVIF:
                 coder = SDImageAVIFCoder.sharedCoder;
-                type = @"avif";
                 break;
             default:
                 break;
         }
+        NSString *type = [TesterUtil typeForFormat:format].lowercaseString;
         NSString *bundlePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
         NSData *bundleData = [NSData dataWithContentsOfFile:bundlePath];
         NSParameterAssert(bundleData);
         
-        [self testDecoder:coder data:bundleData];
+        [self testDecoder:coder data:bundleData format:format];
     }
 }
 
-+ (void)testDecoder:(id<SDImageCoder>)decoder data:(NSData *)data {
++ (void)testDecoder:(id<SDImageCoder>)decoder data:(NSData *)data format:(SDImageFormat)format {
     CFAbsoluteTime before = CFAbsoluteTimeGetCurrent();
     double memoryUsage = [PerformanceUtil memoryUsage];
     SDImageCoderOptions *decodeOptions = nil;
     UIImage *decodedImage = [decoder decodedImageWithData:data options:decodeOptions];
     NSParameterAssert(decodedImage);
     CFAbsoluteTime after = CFAbsoluteTimeGetCurrent();
-    NSLog(@"Decode:  %@, Time: %.2f ms, RAM: %.3fMB", decoder, (after - before) * 1000, [PerformanceUtil memoryUsage] - memoryUsage);
+    NSString *type = [TesterUtil typeForFormat:format];
+    printf("<Decode> [%s]: Time: %.2f ms, RAM: %.3f MB\n", [type cStringUsingEncoding:NSASCIIStringEncoding], (after - before) * 1000, [PerformanceUtil memoryUsage] - memoryUsage);
 }
 
 @end

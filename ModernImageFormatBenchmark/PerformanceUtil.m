@@ -17,10 +17,10 @@ typedef struct bdg_app_cpu_usage {
 }bdg_app_cpu_usage;
 
 typedef struct {
-    u_int64_t appMemory;//app占用内存
-    u_int64_t usedMemory;//设备占用内存
-    u_int64_t totalMemory;//设备总内存
-    u_int64_t availabelMemory;//设备可用内存
+    u_int64_t appMemory;
+    u_int64_t usedMemory;
+    u_int64_t totalMemory;
+    u_int64_t availabelMemory;
 }bdg_MemoryBytes;
 
 

@@ -23,6 +23,8 @@
 		327230E5223E462B00ABA11E /* lena-512x512.heif in Resources */ = {isa = PBXBuildFile; fileRef = 327230E4223E462B00ABA11E /* lena-512x512.heif */; };
 		327B36812205C7180048175B /* PerformanceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 327B36802205C7180048175B /* PerformanceUtil.m */; };
 		328F3EAE22770B63005217BB /* lena-512x512.avif in Resources */ = {isa = PBXBuildFile; fileRef = 328F3EAD22770B63005217BB /* lena-512x512.avif */; };
+		32C493352283D9B700EF008A /* TesterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C493342283D9B700EF008A /* TesterUtil.m */; };
+		32C493372283DD5F00EF008A /* lena-512x512.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 32C493362283DD5F00EF008A /* lena-512x512.jpeg */; };
 		4CF78FB2C36C83BFF0101B5E /* libPods-ModernImageFormatBenchmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ACFC239DFCBBE8514B217F /* libPods-ModernImageFormatBenchmark.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		327B367F2205C7180048175B /* PerformanceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceUtil.h; sourceTree = "<group>"; };
 		327B36802205C7180048175B /* PerformanceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceUtil.m; sourceTree = "<group>"; };
 		328F3EAD22770B63005217BB /* lena-512x512.avif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lena-512x512.avif"; sourceTree = "<group>"; };
+		32C493332283D9B700EF008A /* TesterUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesterUtil.h; sourceTree = "<group>"; };
+		32C493342283D9B700EF008A /* TesterUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesterUtil.m; sourceTree = "<group>"; };
+		32C493362283DD5F00EF008A /* lena-512x512.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lena-512x512.jpeg"; sourceTree = "<group>"; };
 		7C0E12D7E6FEB38A338D9F44 /* Pods-ModernImageFormatBenchmark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModernImageFormatBenchmark.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModernImageFormatBenchmark/Pods-ModernImageFormatBenchmark.release.xcconfig"; sourceTree = "<group>"; };
 		94ACFC239DFCBBE8514B217F /* libPods-ModernImageFormatBenchmark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModernImageFormatBenchmark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,6 +113,8 @@
 				324B1E7A223E32BC00E91F71 /* EncodingTester.m */,
 				327B367F2205C7180048175B /* PerformanceUtil.h */,
 				327B36802205C7180048175B /* PerformanceUtil.m */,
+				32C493332283D9B700EF008A /* TesterUtil.h */,
+				32C493342283D9B700EF008A /* TesterUtil.m */,
 				324B1E7F223E334E00E91F71 /* CGImageInternal.h */,
 				3217BE6B22054475003D0310 /* Main.storyboard */,
 				3217BE6E22054476003D0310 /* Assets.xcassets */,
@@ -122,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				3217BE8022057C50003D0310 /* lena-512x512.png */,
+				32C493362283DD5F00EF008A /* lena-512x512.jpeg */,
 				324B1E80223E388900E91F71 /* lena-512x512.webp */,
 				324B1E82223E38B300E91F71 /* lena-512x512.bpg */,
 				327230E2223E456200ABA11E /* lena-512x512.heic */,
@@ -206,6 +214,7 @@
 				327230E5223E462B00ABA11E /* lena-512x512.heif in Resources */,
 				327230E1223E450F00ABA11E /* lena-512x512.flif in Resources */,
 				328F3EAE22770B63005217BB /* lena-512x512.avif in Resources */,
+				32C493372283DD5F00EF008A /* lena-512x512.jpeg in Resources */,
 				327230E3223E456200ABA11E /* lena-512x512.heic in Resources */,
 				324B1E81223E388900E91F71 /* lena-512x512.webp in Resources */,
 				3217BE6D22054475003D0310 /* Main.storyboard in Resources */,
@@ -246,6 +255,7 @@
 			files = (
 				324B1E7B223E32BC00E91F71 /* EncodingTester.m in Sources */,
 				327B36812205C7180048175B /* PerformanceUtil.m in Sources */,
+				32C493352283D9B700EF008A /* TesterUtil.m in Sources */,
 				3217BE6A22054475003D0310 /* ViewController.m in Sources */,
 				324B1E7E223E32D300E91F71 /* DecodingTester.m in Sources */,
 				3217BE7522054476003D0310 /* main.m in Sources */,
