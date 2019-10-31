@@ -4,9 +4,9 @@ A simple benchmark for modern image formats, including WebP/HEIF/BPG/FLIF/AVIF.
 
 # Dependency
 
-The test based on the [SDWebImage](https://github.com/SDWebImage/SDWebImage) all coder plugins. To provide a intuitive comparison between different modern image formats performance on decoding and encoding (Not on size).
+The test based on the [SDWebImage](https://github.com/SDWebImage/SDWebImage) all coder plugins. To provide an intuitive comparison between different modern image formats performance on decoding and encoding (Not on size).
 
-See [All the coder list](https://github.com/SDWebImage/SDWebImage/wiki/Coder-Plugin-List).
+Learn more about [All SDWebImage codec plugin](https://github.com/SDWebImage/SDWebImage/wiki/Coder-Plugin-List).
 
 # Codec versions
 
@@ -26,8 +26,11 @@ Note: PNG, JPEG and HEIC using Apple's [ImageIO framework](https://developer.app
 
 # Performance result
 
-Test Image: [Lenna - 512 x 512](https://en.wikipedia.org/wiki/Lenna)
+Test Image: [Lenna](https://en.wikipedia.org/wiki/Lenna), 512x512 pixels
+
 Test Device: iPhone X (128GB), iOS 12.4
+
+Encoding compression quality: 0.75 (range: 0-1).
 
 | Format         | decoding(ms)  | encoding(ms) |
 |----------------|---------------|--------------|
