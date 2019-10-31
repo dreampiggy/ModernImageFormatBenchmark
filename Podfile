@@ -2,12 +2,14 @@
 platform :ios, '11.0'
 
 inhibit_all_warnings!
-#use_frameworks!
+install! 'cocoapods', :generate_multiple_pod_projects => true
+
 target 'ModernImageFormatBenchmark' do
     pod 'SDWebImage'
-    pod 'SDWebImageWebPCoder', '~> 0.1'
-    pod 'SDWebImageHEIFCoder', '~> 0.3', :subspecs => ['libde265', 'libx265']
-    pod 'SDWebImageBPGCoder', '~> 0.5', :subspecs => ['libbpg', 'bpgenc']
-    pod 'SDWebImageFLIFCoder', '~> 0.2'
-    pod 'SDWebImageAVIFCoder', '~> 0.2'
+    pod 'SDWebImageWebPCoder'
+    pod 'SDWebImageHEIFCoder', :subspecs => ['libde265', 'libx265']
+    pod 'SDWebImageBPGCoder', :subspecs => ['libbpg', 'bpgenc']
+    pod 'SDWebImageFLIFCoder'
+    pod 'SDWebImageAVIFCoder'
+    pod 'libavif', :subspecs => ['libdav1d', 'librav1e']
 end

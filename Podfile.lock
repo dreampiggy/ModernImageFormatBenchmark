@@ -1,43 +1,40 @@
 PODS:
   - libaom (1.0.1)
-  - libavif (0.1.3):
+  - libavif (0.4.4):
+    - libavif/libaom (= 0.4.4)
+  - libavif/core (0.4.4)
+  - libavif/libaom (0.4.4):
     - libaom (>= 1.0.1)
+    - libavif/core
+  - libavif/libdav1d (0.4.4):
+    - libavif/core
+    - libdav1d (>= 0.4.0)
+  - libavif/librav1e (0.4.4):
+    - libavif/core
+    - librav1e (>= 0.1.0-beta)
   - libbpg (0.9.8)
+  - libdav1d (0.5.1)
   - libde265 (1.0.3)
   - libflif (0.3):
     - libpng
-  - libheif/libde265 (1.4.0):
+  - libheif/libde265 (1.5.1):
     - libde265
     - libheif/libheif
-  - libheif/libheif (1.4.0)
-  - libheif/libx265 (1.4.0):
+  - libheif/libheif (1.5.1)
+  - libheif/libx265 (1.5.1):
     - libheif/libheif
     - libx265
   - libpng (1.6.35)
-  - libwebp (1.0.2):
-    - libwebp/core (= 1.0.2)
-    - libwebp/dec (= 1.0.2)
-    - libwebp/demux (= 1.0.2)
-    - libwebp/dsp (= 1.0.2)
-    - libwebp/enc (= 1.0.2)
-    - libwebp/mux (= 1.0.2)
-    - libwebp/utils (= 1.0.2)
-    - libwebp/webp (= 1.0.2)
-  - libwebp/core (1.0.2):
+  - librav1e (0.1.0-beta)
+  - libwebp (1.0.3):
+    - libwebp/demux (= 1.0.3)
+    - libwebp/mux (= 1.0.3)
+    - libwebp/webp (= 1.0.3)
+  - libwebp/demux (1.0.3):
     - libwebp/webp
-  - libwebp/dec (1.0.2):
-    - libwebp/core
-  - libwebp/demux (1.0.2):
-    - libwebp/core
-  - libwebp/dsp (1.0.2):
-    - libwebp/core
-  - libwebp/enc (1.0.2):
-    - libwebp/core
-  - libwebp/mux (1.0.2):
-    - libwebp/core
-  - libwebp/utils (1.0.2):
-    - libwebp/core
-  - libwebp/webp (1.0.2)
+  - libwebp/mux (1.0.3):
+    - libwebp/demux
+  - libwebp/webp (1.0.3)
   - libx265 (3.0):
     - libx265/common (= 3.0)
     - libx265/core (= 3.0)
@@ -60,11 +57,11 @@ PODS:
     - libx265/encoder
     - libx265/input
     - libx265/output
-  - SDWebImage (5.0.2):
-    - SDWebImage/Core (= 5.0.2)
-  - SDWebImage/Core (5.0.2)
-  - SDWebImageAVIFCoder (0.2.0):
-    - libavif (>= 0.1.3)
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
+  - SDWebImageAVIFCoder (0.4.2):
+    - libavif (~> 0.4)
     - SDWebImage (~> 5.0)
   - SDWebImageBPGCoder/bpgenc (0.6.0):
     - libx265
@@ -76,40 +73,44 @@ PODS:
   - SDWebImageFLIFCoder (0.3.0):
     - libflif
     - SDWebImage/Core (~> 5.0)
-  - SDWebImageHEIFCoder/libde265 (0.5.1):
+  - SDWebImageHEIFCoder/libde265 (0.5.4):
     - libheif/libde265
     - SDWebImage/Core (~> 5.0)
     - SDWebImageHEIFCoder/libheif
-  - SDWebImageHEIFCoder/libheif (0.5.1):
+  - SDWebImageHEIFCoder/libheif (0.5.4):
     - libheif/libheif (>= 1.4.0)
     - SDWebImage/Core (~> 5.0)
-  - SDWebImageHEIFCoder/libx265 (0.5.1):
+  - SDWebImageHEIFCoder/libx265 (0.5.4):
     - libheif/libx265
     - SDWebImage/Core (~> 5.0)
     - SDWebImageHEIFCoder/libheif
-  - SDWebImageWebPCoder (0.2.0):
+  - SDWebImageWebPCoder (0.2.5):
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.0)
 
 DEPENDENCIES:
+  - libavif/libdav1d
+  - libavif/librav1e
   - SDWebImage
-  - SDWebImageAVIFCoder (~> 0.2)
-  - SDWebImageBPGCoder/bpgenc (~> 0.5)
-  - SDWebImageBPGCoder/libbpg (~> 0.5)
-  - SDWebImageFLIFCoder (~> 0.2)
-  - SDWebImageHEIFCoder/libde265 (~> 0.3)
-  - SDWebImageHEIFCoder/libx265 (~> 0.3)
-  - SDWebImageWebPCoder (~> 0.1)
+  - SDWebImageAVIFCoder
+  - SDWebImageBPGCoder/bpgenc
+  - SDWebImageBPGCoder/libbpg
+  - SDWebImageFLIFCoder
+  - SDWebImageHEIFCoder/libde265
+  - SDWebImageHEIFCoder/libx265
+  - SDWebImageWebPCoder
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - libaom
     - libavif
     - libbpg
+    - libdav1d
     - libde265
     - libflif
     - libheif
     - libpng
+    - librav1e
     - libwebp
     - libx265
     - SDWebImage
@@ -121,21 +122,23 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   libaom: 1e48c68559b8d6191c1a9f266e0bee83b2dd21fd
-  libavif: b6de15e6a91a347806b2fcc1fccd471c821f6d6a
+  libavif: 118a73071b19de2528bb2bbfb0d370d84a6cae50
   libbpg: 0d5101762d34398ef336a0c79f4ad3f84b1417c1
+  libdav1d: 790c78fc75357a771ea2bbaf49e79527c20932de
   libde265: b2a0cc3d2aeaafb792b43fcf2a122f42e1de107c
   libflif: 3cd667f03edea266d62ef175347614fc547dcaf8
-  libheif: e79ed1935019556d3b7a5b8926dcbaa478cb4180
+  libheif: d43f68a19ff0912154148481082b8f21225e90ae
   libpng: c490b0523e94f78697f83ad434fbaf715050e15b
-  libwebp: b068a3bd7c45f7460f6715be7bed1a18fd5d6b48
+  librav1e: 99acea4b2780778889f93126f837ad9e092d612f
+  libwebp: 057912d6d0abfb6357d8bb05c0ea470301f5d61e
   libx265: 23ab716aae3eff1e6b68b3db6ace8883867691c4
-  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
-  SDWebImageAVIFCoder: 562dbf2ae35d0d2a31f518885b02f0db4555aa09
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
+  SDWebImageAVIFCoder: 5bcdd0969215f8ae5f8d1bcd2c79b208d63e1966
   SDWebImageBPGCoder: eca567cf12bc213afdaf0359100ea42e807de308
   SDWebImageFLIFCoder: d01e3c8629c3ba196a81a7d049ffce575b8c82cb
-  SDWebImageHEIFCoder: 8e078eff3c4dab7d4031331a225948aab396bfa7
-  SDWebImageWebPCoder: 22ba38003527ade6ca3874f83b8216e655d942ae
+  SDWebImageHEIFCoder: 544bdc1682a671eeef50664727f922fe1c2f950b
+  SDWebImageWebPCoder: 947093edd1349d820c40afbd9f42acb6cdecd987
 
-PODFILE CHECKSUM: 2440bf853e4780560320ebf2b67e827383c693d4
+PODFILE CHECKSUM: 3a7bbb35c8a9b83f37fa28349c2d5a1c0fafad5c
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4
